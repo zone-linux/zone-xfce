@@ -9,8 +9,8 @@
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="icon-size" type="uint" value="20"/>
-      <property name="size" type="uint" value="40"/>
+      <property name="icon-size" type="uint" value="18"/>
+      <property name="size" type="uint" value="35"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
@@ -24,9 +24,10 @@
         <value type="int" value="10"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
+        <value type="int" value="13"/>
         <value type="int" value="14"/>
       </property>
-      <property name="mode" type="uint" value="2"/>
+      <property name="mode" type="uint" value="0"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="disable-struts" type="bool" value="false"/>
     </property>
@@ -34,13 +35,15 @@
   <property name="plugins" type="empty">
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
+      <property name="flat-buttons" type="bool" value="false"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-4" type="string" value="pager">
-      <property name="rows" type="uint" value="4"/>
+      <property name="rows" type="uint" value="2"/>
+      <property name="miniature-view" type="bool" value="true"/>
     </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -63,15 +66,19 @@
     </property>
     <property name="plugin-12" type="string" value="clock">
       <property name="mode" type="uint" value="2"/>
-      <property name="digital-format" type="string" value="%I:%M"/>
+      <property name="digital-format" type="string" value="%A, %m/%d/%y | %I:%M %p"/>
     </property>
     <property name="plugin-14" type="string" value="actions">
-      <property name="appearance" type="uint" value="0"/>
+      <property name="appearance" type="uint" value="1"/>
       <property name="button-title" type="uint" value="1"/>
       <property name="custom-title" type="string" value=""/>
       <property name="ask-confirmation" type="bool" value="true"/>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu"/>
     <property name="plugin-7" type="string" value="showdesktop"/>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="1"/>
+    </property>
   </property>
 </channel>
