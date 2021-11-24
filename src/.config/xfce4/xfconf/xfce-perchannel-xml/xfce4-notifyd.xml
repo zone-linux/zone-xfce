@@ -5,6 +5,13 @@
     <property name="known_applications" type="array">
       <value type="string" value="ulauncher"/>
       <value type="string" value="VBoxClient"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
     </property>
   </property>
+  <property name="primary-monitor" type="uint" value="0"/>
+  <property name="notify-location" type="uint" value="2"/>
+  <property name="log-level" type="uint" value="0"/>
+  <property name="log-level-apps" type="uint" value="0"/>
+  <property name="theme" type="string" value="Qogir-dark"/>
+  <property name="do-slideout" type="bool" value="false"/>
 </channel>
