@@ -5,7 +5,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
-export PROMPT="%F{078}%~"$'\n'" ❯ %f"
+
 autoload -U promptinit; promptinit
 autoload -U colors && colors
 export PWD=/home/$USER
@@ -14,6 +14,10 @@ export BAT_THEME="Nord"
 
 export KEYTIMEOUT=1
 export ZSH=/usr/share/oh-my-zsh
+
+ZSH_THEME=random
+ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "crunch" "fino-time" "funky" "jonathan" "junkfood" )
+
 source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/nano
