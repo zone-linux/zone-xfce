@@ -15,8 +15,8 @@
   </property>
   <property name="screensavers" type="empty">
     <property name="xfce-personal-slideshow" type="empty">
-      <property name="location" type="string" value="/usr/share/backgrounds/zone-wallpapers"/>
-      <property name="arguments" type="string" value="--location=/usr/share/backgrounds/zone-wallpapers"/>
+      <property name="location" type="string" value="/usr/share/backgrounds/zone"/>
+      <property name="arguments" type="string" value="--location=/usr/share/backgrounds/zone"/>
       <property name="background-color" type="string" value="#1E222A"/>
       <property name="no-stretch" type="bool" value="true"/>
     </property>
