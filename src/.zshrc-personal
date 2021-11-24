@@ -2,7 +2,6 @@
 alias cat='bat'
 alias cd..='cd ..'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq);yay -c' #Cleanup orphaned packages
-alias cp='cp -i'
 alias cpu="ps axch -o cmd:15,%cpu --sort=-%cpu | head"
 alias df='df -h'
 alias e='exit'
@@ -130,5 +129,6 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 bindkey -s '^o' 'rangercd\n'
+bindkey -s '^g' 'git pull && git status; git diff\n'
 bindkey '^R' history-incremental-search-backward
 bindkey -v 
