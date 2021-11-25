@@ -19,8 +19,8 @@ ZSH_THEME=random
 ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "crunch" "fino-time" "funky" "jonathan" "junkfood" )
 
 source $ZSH/oh-my-zsh.sh
-export EDITOR=/usr/bin/nano
-export VISUAL=/usr/bin/nano
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 export _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -42,3 +42,5 @@ plugins=(
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+
+colorscript -r

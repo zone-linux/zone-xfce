@@ -128,6 +128,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
+bindkey -s '^x' 'exit'
 bindkey -s '^o' 'rangercd\n'
 bindkey -s '^g' 'git pull && git status; git diff\n'
 bindkey '^R' history-incremental-search-backward
