@@ -1,0 +1,20 @@
+#!/bin/bash
+
+DIR="/usr/share/sounds/zone"
+
+if [[ "$1" == "--login" ]]; then
+  mplayer "$DIR/pda_news.ogg"
+elif [[ "$1" == "--logout" ]]; then
+  mplayer "$DIR/pda_objective.ogg"
+elif [[ "$1" == "--random" ]]; then
+  ls $DIR | shuf -n 1 | while read file; do
+    mplayer "$DIR/$file"
+  done
+else
+  echo "
+  Available Options:
+    --login
+    --logout
+    --random
+  "
+fi
