@@ -15,8 +15,30 @@ export BAT_THEME="Nord"
 export KEYTIMEOUT=1
 export ZSH=/usr/share/oh-my-zsh
 
-ZSH_THEME=random
-ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "crunch" "fino-time" "funky" "jonathan" "junkfood" )
+# Load Version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats "%b "
+
+ZSH_THEME_GIT_PROMPT_PREFIX="none"
+ZSH_THEME_GIT_PROMPT_SUFFIX="none"
+ZSH_THEME_GIT_PROMPT_DIRTY="✘"
+ZSH_THEME_GIT_PROMPT_CLEAN="✔"
+ZSH_THEME_GIT_PROMPT_ADDED="✚"
+ZSH_THEME_GIT_PROMPT_MODIFIED="✹"
+ZSH_THEME_GIT_PROMPT_DELETED="✖"
+ZSH_THEME_GIT_PROMPT_RENAMED="➜"
+ZSH_THEME_GIT_PROMPT_UNMERGED=" ═"
+ZSH_THEME_GIT_PROMPT_UNTRACKED=" ✭"
+
+setopt prompt_subst
+PROMPT="%F{011}%~"$'\n'" ❯ %f"
+RPROMPT='%F{060}${vcs_info_msg_0_}`git_prompt_status`'
+
+#ZSH_THEME=random
+#ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "crunch" "fino-time" "funky" "jonathan" "junkfood" )
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR=/usr/bin/nvim
