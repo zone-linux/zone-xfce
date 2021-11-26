@@ -1,0 +1,118 @@
+sw_volume: 98
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: pause
+current: 68
+time: 0.083000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 001 guitar_1.ogg [4rVj-3NIeQk].mp3
+1:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 002 guitar_2.ogg [4rVj-3NIeQk].mp3
+2:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 003 guitar_3.ogg [4rVj-3NIeQk].mp3
+3:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 004 guitar_4.ogg [4rVj-3NIeQk].mp3
+4:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 005 guitar_5.ogg [4rVj-3NIeQk].mp3
+5:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 006 guitar_6.ogg [4rVj-3NIeQk].mp3
+6:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 007 guitar_7.ogg [4rVj-3NIeQk].mp3
+7:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 008 guitar_8.ogg [4rVj-3NIeQk].mp3
+8:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 009 guitar_9.ogg [4rVj-3NIeQk].mp3
+9:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 010 guitar_10.ogg [4rVj-3NIeQk].mp3
+10:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 011 guitar_11.ogg [4rVj-3NIeQk].mp3
+11:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 012 guitar_12.ogg [4rVj-3NIeQk].mp3
+12:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 013 guitar_13.ogg [4rVj-3NIeQk].mp3
+13:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 014 guitar_14.ogg [4rVj-3NIeQk].mp3
+14:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 015 guitar_15.ogg [4rVj-3NIeQk].mp3
+15:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 016 guitar_16.ogg [4rVj-3NIeQk].mp3
+16:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 017 guitar_17.ogg [4rVj-3NIeQk].mp3
+17:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 018 guitar_18.ogg [4rVj-3NIeQk].mp3
+18:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 019 guitar_19.ogg [4rVj-3NIeQk].mp3
+19:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 020 guitar_20.ogg [4rVj-3NIeQk].mp3
+20:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 021 guitar_21.ogg [4rVj-3NIeQk].mp3
+21:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 022 guitar_22.ogg [4rVj-3NIeQk].mp3
+22:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 023 guitar_23.ogg [4rVj-3NIeQk].mp3
+23:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 024 guitar_24.ogg [4rVj-3NIeQk].mp3
+24:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 025 guitar_25.ogg [4rVj-3NIeQk].mp3
+25:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 026 guitar_26.ogg [4rVj-3NIeQk].mp3
+26:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 027 guitar_27.ogg [4rVj-3NIeQk].mp3
+27:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 028 guitar_28.ogg [4rVj-3NIeQk].mp3
+28:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 029 guitar_29.ogg [4rVj-3NIeQk].mp3
+29:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 030 guitar_30.ogg [4rVj-3NIeQk].mp3
+30:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 031 guitar_31.ogg [4rVj-3NIeQk].mp3
+31:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 032 guitar_32.ogg [4rVj-3NIeQk].mp3
+32:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 033 guitar_33.ogg [4rVj-3NIeQk].mp3
+33:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 034 guitar_34.ogg [4rVj-3NIeQk].mp3
+34:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 035 guitar_35.ogg [4rVj-3NIeQk].mp3
+35:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 036 guitar_36.ogg [4rVj-3NIeQk].mp3
+36:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 037 guitar_37.ogg [4rVj-3NIeQk].mp3
+37:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 038 guitar_38.ogg [4rVj-3NIeQk].mp3
+38:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 039 guitar_39.ogg [4rVj-3NIeQk].mp3
+39:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 040 guitar_40.ogg [4rVj-3NIeQk].mp3
+40:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 041 guitar_41.ogg [4rVj-3NIeQk].mp3
+41:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 042 guitar_42.ogg [4rVj-3NIeQk].mp3
+42:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 043 guitar_43.ogg [4rVj-3NIeQk].mp3
+43:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 044 guitar_44.ogg [4rVj-3NIeQk].mp3
+44:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 045 guitar_45.ogg [4rVj-3NIeQk].mp3
+45:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 046 guitar_46.ogg [4rVj-3NIeQk].mp3
+46:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 047 guitar_47.ogg [4rVj-3NIeQk].mp3
+47:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 048 guitar_48.ogg [4rVj-3NIeQk].mp3
+48:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 049 guitar_49.ogg [4rVj-3NIeQk].mp3
+49:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 050 guitar_50.ogg [4rVj-3NIeQk].mp3
+50:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 051 guitar_51.ogg [4rVj-3NIeQk].mp3
+51:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 052 guitar_52.ogg [4rVj-3NIeQk].mp3
+52:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 053 guitar_53.ogg [4rVj-3NIeQk].mp3
+53:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 054 guitar_54.ogg [4rVj-3NIeQk].mp3
+54:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 055 guitar_55.ogg [4rVj-3NIeQk].mp3
+55:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 056 guitar_56.ogg [4rVj-3NIeQk].mp3
+56:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 057 guitar_57.ogg [4rVj-3NIeQk].mp3
+57:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 058 guitar_58.ogg [4rVj-3NIeQk].mp3
+58:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 059 guitar_59.ogg [4rVj-3NIeQk].mp3
+59:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 060 guitar_60.ogg [4rVj-3NIeQk].mp3
+60:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 061 guitar_61.ogg [4rVj-3NIeQk].mp3
+61:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 062 guitar_62.ogg [4rVj-3NIeQk].mp3
+62:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 063 guitar_63.ogg [4rVj-3NIeQk].mp3
+63:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 064 guitar_64.ogg [4rVj-3NIeQk].mp3
+64:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 065 guitar_65.ogg [4rVj-3NIeQk].mp3
+65:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 066 guitar_66.ogg [4rVj-3NIeQk].mp3
+66:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 067 guitar_67.ogg [4rVj-3NIeQk].mp3
+67:Stalker_Anomaly/S.T.A.L.K.E.R. Anomaly - All Guitar Tracks - 068 guitar_68.ogg [4rVj-3NIeQk].mp3
+68:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 001 intro [GVjwJxYDJUA].mp3
+69:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 002 OST [GVjwJxYDJUA].mp3
+70:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 003 OST [GVjwJxYDJUA].mp3
+71:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 004 OST [GVjwJxYDJUA].mp3
+72:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 005 Russian sailor's dance [GVjwJxYDJUA].mp3
+73:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 006 Davai Nayarivay - Lube [GVjwJxYDJUA].mp3
+74:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 007 OST [GVjwJxYDJUA].mp3
+75:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 008 OST [GVjwJxYDJUA].mp3
+76:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 009 OST [GVjwJxYDJUA].mp3
+77:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 010 OST [GVjwJxYDJUA].mp3
+78:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 011 OST [GVjwJxYDJUA].mp3
+79:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 012 OST [GVjwJxYDJUA].mp3
+80:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 013 OST [GVjwJxYDJUA].mp3
+81:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 014 OST [GVjwJxYDJUA].mp3
+82:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 015 The ferris wheel of Pripyat [GVjwJxYDJUA].mp3
+83:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 016 Stalker's life [GVjwJxYDJUA].mp3
+84:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 017 Peaceful ending [GVjwJxYDJUA].mp3
+85:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 018 A new dawn [GVjwJxYDJUA].mp3
+86:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 019 He was a good stalker [GVjwJxYDJUA].mp3
+87:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 020 Against the ionized odds [GVjwJxYDJUA].mp3
+88:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 021 Against the ionized odds (solo) [GVjwJxYDJUA].mp3
+89:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 022 Tsyganochka [GVjwJxYDJUA].mp3
+90:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 023 Sleepless night [GVjwJxYDJUA].mp3
+91:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 024 The brightest twilight [GVjwJxYDJUA].mp3
+92:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 025 Kordon [GVjwJxYDJUA].mp3
+93:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 026 Aria - Vozmi moe serdtse [GVjwJxYDJUA].mp3
+94:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 027 Kino - Kukushka [GVjwJxYDJUA].mp3
+95:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 028 Kino - General [GVjwJxYDJUA].mp3
+96:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 029 Metro 2033 - Main theme [GVjwJxYDJUA].mp3
+97:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 030 Metro Last Light - Bunker Blues [GVjwJxYDJUA].mp3
+98:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 031 Metro 2033 - The market [GVjwJxYDJUA].mp3
+99:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 032 Metro 2033 - Good ending [GVjwJxYDJUA].mp3
+100:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 033 Metro 2033 - OST [GVjwJxYDJUA].mp3
+101:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 034 Metro Last Light - Main theme [GVjwJxYDJUA].mp3
+102:Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 035 Bandit radio (CHEEKI BREEKI) [GVjwJxYDJUA].mp3
+playlist_end
