@@ -211,3 +211,9 @@ Nov 25 16:59 : update: added Stalker_Metro/30 minutes of STALKER_Metro - Atmosph
 Nov 25 16:59 : update: added Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 034 Metro Last Light - Main theme [GVjwJxYDJUA].mp3
 Nov 25 16:59 : update: added Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 035 Bandit radio (CHEEKI BREEKI) [GVjwJxYDJUA].mp3
 Nov 25 17:00 : exception: Failed to open /home/kungger/.mpd/playlists: No such file or directory
+Nov 26 17:12 : exception: Failed to open '/home/kungger/.mpd/mpdstate': No such file or directory
+Nov 26 17:13 : exception: Failed to open /home/kungger/.mpd/playlists: No such file or directory
+Nov 26 17:13 : player: played "Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 001 intro [GVjwJxYDJUA].mp3"
+Nov 26 17:18 : player: played "Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 001 intro [GVjwJxYDJUA].mp3"
+Nov 26 21:18 : player: played "Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 001 intro [GVjwJxYDJUA].mp3"
+Nov 26 21:19 : player: played "Stalker_Metro/30 minutes of STALKER_Metro - Atmospheric Music Mix - 001 intro [GVjwJxYDJUA].mp3"
