@@ -34,7 +34,7 @@ ZSH_THEME_GIT_PROMPT_UNMERGED=" ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED=" ✭"
 
 setopt prompt_subst
-PROMPT="%F{011}%~"$'\n'" ❯ %f"
+PROMPT="%F{011}%~ %F{060}%n@%m%F{011}"$'\n'" ❯ %f"
 RPROMPT='%F{060}${vcs_info_msg_0_}`git_prompt_status`'
 
 #ZSH_THEME=random
