@@ -27,8 +27,9 @@
         <value type="int" value="12"/>
         <value type="int" value="13"/>
         <value type="int" value="14"/>
-        <value type="int" value="6"/>
         <value type="int" value="17"/>
+        <value type="int" value="6"/>
+        <value type="int" value="18"/>
       </property>
       <property name="mode" type="uint" value="0"/>
       <property name="length-adjust" type="bool" value="true"/>
@@ -50,13 +51,14 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="discord"/>
         <value type="string" value="thunar"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance2721;firefox.instance6028"/>
+      <property name="mpris-players" type="string" value="firefox.instance1711;firefox.instance2721;firefox.instance6028"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -89,6 +91,9 @@
       <property name="expand" type="bool" value="false"/>
     </property>
     <property name="plugin-17" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-18" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
   </property>
