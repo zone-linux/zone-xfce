@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Launch Conky configuration
+conky --config=$HOME/.config/conky/zone.conkyrc -d
