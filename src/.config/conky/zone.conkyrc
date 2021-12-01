@@ -11,7 +11,7 @@ conky.config = {
 	no_buffers = true,							-- Subtract (file system) buffers from used memory?
 	temperature_unit = 'celsius',				-- fahrenheit or celsius
 	text_buffer_size = 2048,					-- size of buffer for display of content of large variables - default 256
-	update_interval = 1,						-- update interval
+	update_interval = 3,						-- update interval
 	imlib_cache_size = 0,                       -- disable image cache to get a new spotify cover per song
 
 
@@ -101,7 +101,7 @@ ${color0}${font Base02:Regular:size=16}${alignc}${exec cat /etc/issue | sed 's/ 
 ${font AmazS.T.A.L.K.E.R.V.3.0:Regular:size=45}${alignc}${offset 3}S.Y.S.T.E.M.
 ${voffset -50}${color0}${hr 2}${font}
 ${color0}Hostname:${alignr}${color4}${nodename}
-${color0}Uptime:${alignr}${color4}${uptime}
+${color0}Uptime:${alignr}${color4}${exec uptime --pretty | sed -e 's/up //g' -e 's/ days/d/g' -e 's/ day/d/g' -e 's/ hours/h/g' -e 's/ hour/h/g' -e 's/ minutes/m/g' -e 's/, //g'}
 ${color0}UTC:${alignr}${color4}${utime %H:%M %p}
 ${color0}Time Now:${alignr}${color4}${exec date '+%I:%M %p'}
 
