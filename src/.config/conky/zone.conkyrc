@@ -101,13 +101,15 @@ ${color0}${font Base02:Regular:size=16}${alignc}${exec cat /etc/issue | sed 's/ 
 ${font AmazS.T.A.L.K.E.R.V.3.0:Regular:size=45}${alignc}${offset 3}S.Y.S.T.E.M.
 ${voffset -50}${color0}${hr 2}${font}
 ${color0}Hostname:${alignr}${color4}${nodename}
-${color0}Uptime:${alignr}${color4}${exec uptime --pretty | sed -e 's/up //g' -e 's/ days/d/g' -e 's/ day/d/g' -e 's/ hours/h/g' -e 's/ hour/h/g' -e 's/ minutes/m/g' -e 's/, //g'}
+${color0}Uptime:${alignr}${color4}${exec uptime --pretty | sed -e 's/up //g' -e 's/ days/d/g' -e 's/ day/d/g' -e 's/ hours/h/g' -e 's/ hour/h /g' -e 's/ minutes/m/g' -e 's/, //g'}
+${color0}Installed Pkgs:${alignr}${color4}${exec pacman -Q | wc -l}
+
 ${color0}UTC:${alignr}${color4}${utime %H:%M %p}
 ${color0}Time Now:${alignr}${color4}${exec date '+%I:%M %p'}
 
 ${color0}${offset 3}${font JetBrainsMono Nerd Font:Medium:size=8}PROCESSOR ${color1}${hr 2}
 ${cpugraph 30,300}
-${color0}${voffset -5}${alignc}Usage: ${exec top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}'}
+${color0}${voffset -5}${alignc}Usage: ${exec top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}'} | Processes: ${exec ps -e | wc -l}
 
 ${color0}${offset 3}${font JetBrainsMono Nerd Font:Medium:size=8}MEMORY ${color2}${hr 2}
 ${voffset 3}${membar}
@@ -115,5 +117,5 @@ ${color0}${offset 10}${alignc}Usage: ${exec free -h | awk '/^Mem/ { print $4 }' 
 
 ${color0}${offset 3}${font JetBrainsMono Nerd Font:Medium:size=8}STORAGE ${color4}${hr 2}
 ${voffset 3}${fs_bar /}
-${color0}${alignc}Usage: ${exec df -h / | awk 'NR==2 { print $4 }' | sed s/i//g} | ${exec df -h / | awk 'NR==2 { print $3 }' | sed s/i//g} of ${exec df -h / | awk 'NR==2 { print $2 }' | sed s/i//g}
+${color0}${alignc}Free: ${exec df -h / | awk 'NR==2 { print $4 }' | sed s/i//g} | ${exec df -h / | awk 'NR==2 { print $3 }' | sed s/i//g} of ${exec df -h / | awk 'NR==2 { print $2 }' | sed s/i//g}
 ]];
