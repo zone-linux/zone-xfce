@@ -113,7 +113,7 @@ ${color0}${voffset -5}${alignc}Usage: ${exec top -bn1 | grep "Cpu(s)" | sed "s/.
 
 ${color0}${offset 3}${font JetBrainsMono Nerd Font:Medium:size=8}MEMORY ${color2}${hr 2}
 ${voffset 3}${membar}
-${color0}${offset 10}${alignc}Usage: ${exec free -h | awk '/^Mem/ { print $4 }' | sed s/i//g} | ${exec free -h | awk '/^Mem/ { print $3 }' | sed s/i//g} of ${exec free -h | awk '/^Mem/ { print $2 }' | sed s/i//g} 
+${color0}${alignc}Usage: ${exec free -h | awk '/^Mem/ { print $3 }' | sed s/i//g} / ${exec free -h | awk '/^Mem/ { print $2 }' | sed s/i//g} 
 
 ${color0}${offset 3}${font JetBrainsMono Nerd Font:Medium:size=8}STORAGE ${color4}${hr 2}
 ${voffset 3}${fs_bar /}
