@@ -26,10 +26,10 @@
         <value type="int" value="11"/>
         <value type="int" value="12"/>
         <value type="int" value="13"/>
-        <value type="int" value="14"/>
-        <value type="int" value="17"/>
         <value type="int" value="6"/>
         <value type="int" value="18"/>
+        <value type="int" value="14"/>
+        <value type="int" value="17"/>
       </property>
       <property name="mode" type="uint" value="0"/>
       <property name="length-adjust" type="bool" value="true"/>
@@ -51,8 +51,12 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
         <value type="string" value="discord"/>
         <value type="string" value="thunar"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="ulauncher"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
