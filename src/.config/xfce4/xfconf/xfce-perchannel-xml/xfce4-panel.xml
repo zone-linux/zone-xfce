@@ -19,15 +19,15 @@
         <value type="int" value="16"/>
         <value type="int" value="7"/>
         <value type="int" value="4"/>
-        <value type="int" value="5"/>
-        <value type="int" value="8"/>
-        <value type="int" value="9"/>
-        <value type="int" value="10"/>
-        <value type="int" value="11"/>
-        <value type="int" value="12"/>
         <value type="int" value="13"/>
         <value type="int" value="6"/>
+        <value type="int" value="11"/>
+        <value type="int" value="10"/>
+        <value type="int" value="9"/>
+        <value type="int" value="8"/>
         <value type="int" value="18"/>
+        <value type="int" value="12"/>
+        <value type="int" value="5"/>
         <value type="int" value="14"/>
         <value type="int" value="17"/>
       </property>
@@ -49,15 +49,22 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
-      <property name="square-icons" type="bool" value="true"/>
+      <property name="square-icons" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="discord"/>
-        <value type="string" value="thunar"/>
       </property>
       <property name="known-items" type="array">
         <value type="string" value="ulauncher"/>
       </property>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="icon-size" type="int" value="0"/>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
@@ -67,23 +74,24 @@
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-11" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
+      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
       <property name="mode" type="uint" value="2"/>
-      <property name="digital-format" type="string" value="%A, %m/%d/%y | %I:%M %p"/>
+      <property name="digital-format" type="string" value="%I:%M %p"/>
+      <property name="tooltip-format" type="string" value="%x"/>
     </property>
     <property name="plugin-14" type="string" value="actions">
       <property name="appearance" type="uint" value="1"/>
-      <property name="button-title" type="uint" value="1"/>
-      <property name="custom-title" type="string" value=""/>
+      <property name="button-title" type="uint" value="3"/>
+      <property name="custom-title" type="string" value=""/>
       <property name="ask-confirmation" type="bool" value="true"/>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu"/>
     <property name="plugin-7" type="string" value="showdesktop"/>
     <property name="plugin-13" type="string" value="separator">
       <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
+      <property name="style" type="uint" value="2"/>
     </property>
     <property name="plugin-15" type="string" value="xfce4-mpc-plugin"/>
     <property name="plugin-16" type="string" value="separator">
