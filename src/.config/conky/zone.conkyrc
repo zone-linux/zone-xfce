@@ -17,11 +17,11 @@ conky.config = {
 
 	--Placement
 
-	alignment = 'top_right',		            -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
+	alignment = 'middle_right',		            -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
 												-- middle_left,middle_middle,middle_right,none
 	
         gap_x = 25,									-- pixels between right or left border
-	gap_y = 235,									-- pixels between bottom or left border
+	--gap_y = 216,									-- pixels between bottom or left border
 	--minimum_height = 200,						-- minimum height of window
 	--minimum_width = 200,						-- minimum width of window
 	--maximum_width = 255,						-- maximum width of window
@@ -93,12 +93,11 @@ conky.config = {
 
 conky.text = [[
 
-${image /usr/share/zone.png -p 112,0 -s 80x80}
+${image /usr/share/zone.png -p 110,0 -s 80x80}
 
 
 
-${color0}${font Base02:Regular:size=16}${alignc}${exec cat /etc/issue | sed 's/ \\r.*//g'}
-${font AmazS.T.A.L.K.E.R.V.3.0:Regular:size=45}${alignc}${offset 3}S.Y.S.T.E.M.
+${color0}${font AmazS.T.A.L.K.E.R.V.3.0:Regular:size=45}${alignc}${offset 3}S.Y.S.T.E.M.
 ${voffset -50}${color0}${hr 2}${font}
 ${color0}Hostname:${alignr}${color4}${nodename}
 ${color0}Uptime:${alignr}${color4}${exec uptime --pretty | sed -e 's/up //g' -e 's/ days/d/g' -e 's/ day/d/g' -e 's/ hours/h/g' -e 's/ hour/h /g' -e 's/ minutes/m/g' -e 's/, //g'}
