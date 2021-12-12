@@ -4,10 +4,9 @@ Version=0.9.4
 Type=Application
 Name=uLauncher
 Comment=Launch Applications
-Exec=ulauncher
+Exec=ulauncher --hide-window
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false
 Terminal=false
-Hidden=true
-
+Hidden=false
