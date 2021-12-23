@@ -99,6 +99,7 @@ ${image /usr/share/zone.png -p 110,0 -s 80x80}
 
 ${color0}${font AmazS.T.A.L.K.E.R.V.3.0:Regular:size=45}${alignc}${offset 3}S.Y.S.T.E.M.
 ${voffset -50}${color0}${hr 2}${font}
+${color0}Username:${alignr}${color4}${exec whoami}
 ${color0}Hostname:${alignr}${color4}${nodename}
 ${color0}Uptime:${alignr}${color4}${exec uptime --pretty | sed -e 's/up //g' -e 's/ days/d/g' -e 's/ day/d/g' -e 's/ hours/h/g' -e 's/ hour/h /g' -e 's/ minutes/m/g' -e 's/, //g'}
 ${color0}Installed Pkgs:${alignr}${color4}${exec pacman -Q | wc -l}
