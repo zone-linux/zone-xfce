@@ -2,6 +2,7 @@
 alias cat='bat'
 alias cd..='cd ..'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq);yay -c' #Cleanup orphaned packages
+alias clock='tty-clock -sct -C 4'
 alias cpu="ps axch -o cmd:15,%cpu --sort=-%cpu | head"
 alias df='df -h'
 alias e='exit'
@@ -20,6 +21,7 @@ alias less='bat'
 alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
 alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
 alias m='mocp'
+alias matrix='unimatrix -f -l ocCgGkS -s 96'
 alias mem="ps axch -o cmd:15,%mem --sort=-%mem | head"
 alias merge="xrdb -merge ~/.Xresources"
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist" # update your mirrors
@@ -30,6 +32,7 @@ alias mpv='devour mpv'
 alias mv='mv -i'
 alias p='devour pcmanfm .'
 alias pdw="pwd"
+alias pipes='pipes -R -t 1'
 alias q='exit'
 alias rg="rg --sort path --no-ignore --hidden" #search content with ripgrep
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl" #Recent Installed Packages
