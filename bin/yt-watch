@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-api_key="AIzaSyA59XW71qBIAR0ViapQd8sZ_OjqnrxSsaU"
+api_key="AIzaSyAr8NhkzkZlzo383lvPVP2ik6KFGnZ98Jw"
 
 c_red="\033[1;31m"
 c_green="\033[1;32m"
