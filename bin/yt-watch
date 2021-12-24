@@ -3,8 +3,8 @@
 api_key="AIzaSyA59XW71qBIAR0ViapQd8sZ_OjqnrxSsaU"
 
 c_red="\033[1;31m"
-c_blue="\033[1;34m"
 c_green="\033[1;32m"
+c_blue="\033[1;34m"
 c_reset="\033[0m"
 tmp_file="/tmp/yt-hist"
 
@@ -36,7 +36,7 @@ playVideo() {
   setsid -f mpv "$link" --loop 2>/dev/null 1>&2
 }
 
-searchVideo() {
+searchQuery() {
   if ! command -v jq &> /dev/null; then
     die "jq is not installed\n"
   fi
@@ -46,28 +46,17 @@ searchVideo() {
   printf "${c_red}Search YouTube Video:${c_reset} "
   read -r query
 
-  if [[ $query == "" ]]; then
+  if [[ "$query" == "" ]]; then
     die "No query term specified\n"
   fi
 
-  query="${query// /+}"
+  query=$(printf "%s" "$query" | tr ' ' '+')
   tput reset
 
   urlstring="https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&maxResults=20&key=${api_key}"
-  curl -s "${urlstring}" | jq -r '.items[] | "\(.snippet.channelTitle) --> \(.snippet.title) https://youtu.be/\(.id.videoId)"' > $tmp_file
+  curl -s "${urlstring}" | jq -r '.items[] | "\(.snippet.channelTitle) --> \(.snippet.title) https://youtu.be/\(.id.videoId)"' > "$tmp_file"
 
-  formatPrint $tmp_file
-
-  printf "\n${c_red}Enter Choice:${c_reset} "
-    read -r choice
-    [ "$choice" -eq "$choice" ] 2>/dev/null || die "${c_red}Invalid Number Entered.${c_reset}\n"
-    [[ $(wc -l ${tmp_file} | cut -d' ' -f1) -lt $choice  ]] || [[ $choice -lt 0 ]] || [[ $choice -eq 0 ]] && die "${c_red}Invalid choice range.${c_reset}\n"
-    
-    videourl=$(awk -v choice="$choice" '{if(NR==choice) print $0}' ${tmp_file}| awk '{print $NF}')
-    videotitle=$(awk -v choice="$choice" '{if(NR==choice) print $0}' ${tmp_file} | sed 's/ https:.*//g')
-    
-    notify "Playing Video" "$videotitle" && playVideo "${videourl}"
-    tput reset
+  searchVideo
 }
 
 searchHistory() {
@@ -75,18 +64,22 @@ searchHistory() {
     die "You don't have a recent search history\n"
   fi
 
-  tput reset
-  formatPrint $tmp_file
+  searchVideo
+}
+
+searchVideo() {
+  formatPrint "$tmp_file"
 
   printf "\n${c_red}Enter Choice:${c_reset} "
     read -r choice
     [ "$choice" -eq "$choice" ] 2>/dev/null || die "${c_red}Invalid Number Entered.${c_reset}\n"
     [[ $(wc -l ${tmp_file} | cut -d' ' -f1) -lt $choice  ]] || [[ $choice -lt 0 ]] || [[ $choice -eq 0 ]] && die "${c_red}Invalid choice range.${c_reset}\n"
     
-    videourl=$(awk -v choice="$choice" '{if(NR==choice) print $0}' ${tmp_file}| awk '{print $NF}')
-    videotitle=$(awk -v choice="$choice" '{if(NR==choice) print $0}' ${tmp_file} | sed 's/ https:.*//g')
-    
-    notify "Playing Video" "$videotitle" && playVideo "${videourl}"
+    video=$(awk -v choice="$choice" '{if(NR==choice) print $0}' ${tmp_file})
+    videourl=$(printf "%s" "$video" | awk '{ print $NF }')
+    videotitle=$(printf "%s" "$video" | sed 's/^[^-]*--> //g' | sed 's/ http.*//g')
+
+    notify "Playing Video" "$videotitle" && playVideo "$videourl"
     tput reset
 }
 
@@ -112,16 +105,32 @@ downloadMp3() {
   yt-dlp --extract-audio --audio-format=mp3 --audio-quality=0 "$id"
 }
 
+# Play youtube video link from clipboard
 if [[ "$1" == "" ]]; then
   notify "Playing Video" "$(xclip -o)" && playVideo "$(xclip -o)"
+
+# input youtube link
 elif [[ "$1" == "-l" || "$1" == "--link" ]]; then
   notify "Playing Video" "$2" && playVideo "$2"
-elif [[ "$1" == "-s" || "$1" == "--search" ]]; then
-  searchVideo
-elif [[ "$1" == "-h" || "$1" == "--history" ]]; then
-  searchHistory
+
+# Download youtube video on .mp4 format with the highest quality
 elif [[ "$1" == "-dv" || "$1" == "--download-video" ]]; then
   downloadVideo "$2"
+
+# Convert & Download youtube video on .mp3 format with the highest quality
 elif [[ "$1" == "-dm" || "$1" == "--download-mp3" ]]; then
   downloadMp3 "$2"
+
+# Search youtube videos
+elif [[ "$1" == "-s" || "$1" == "--search" ]]; then
+  searchQuery
+
+# Uses recent results from recent search query. 
+elif [[ "$1" == "-h" || "$1" == "--history" ]]; then
+  searchHistory
+
+# Stops the video from playing
+elif [[ "$1" == "-k" || "$1" == "--kill" ]]; then
+  pkill mpv
+
 fi
