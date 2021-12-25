@@ -209,18 +209,20 @@ trap _sigterm SIGTERM
 trap _sigterm SIGINT
 
 helpScreen() {
-  echo "
-  Usage: yt-watch [OPTION]
+  printf "
+  ${c_blue}Usage:${c_reset} ${c_green}yt-watch${c_reset} [${c_red}OPTION${c_reset}]
 
-  --help                        This help screen
-  None                          Uses the YouTube link from your clipboard.
-  -l, --link                    Play YouTube video from link. (--link 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-  -dv, --download-mp4           Download YouTube video & converts it to '.mp4' format. (--download-video 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-  -dm, --download-mp3           Downloads & converts Video to '.mp3' format. (--download-mp3 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-  -s, --search                  Lets you enter a search query and uses youtube API/yt-dlp.
-  -sl, --search-length          Customize the result length of your search query. (--search-length 20)
-  -h, --history                 Lists out the query results of your latest search.
-  -k, --kill                    Kills mpv
+  ${c_green}OPTIONS:${c_reset}
+  ${c_red}--help${c_reset}                        ${c_blue}This help screen${c_reset}
+  ${c_red}None${c_reset}                          ${c_blue}Uses the YouTube link from your clipboard.${c_reset}
+  ${c_red}-l, --link${c_reset}                    ${c_blue}Play YouTube video from link. (--link 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')${c_reset}
+  ${c_red}-dv, --download-mp4${c_reset}           ${c_blue}Download YouTube video & converts it to '.mp4' format. (--download-video 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')${c_reset}
+  ${c_red}-dm, --download-mp3${c_reset}           ${c_blue}Downloads & converts Video to '.mp3' format. (--download-mp3 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')${c_reset}
+  ${c_red}-s, --search${c_reset}                  ${c_blue}Lets you enter a search query and uses youtube API/yt-dlp.${c_reset}
+  ${c_red}-sl, --search-length${c_reset}          ${c_blue}Customize the result length of your search query. (--search-length 20)${c_reset}
+  ${c_red}-h, --history${c_reset}                 ${c_blue}Lists out the query results of your latest search.${c_reset}
+  ${c_red}-k, --kill${c_reset}                    ${c_blue}Kills mpv${c_reset}
+  ${c_red}-q, --queries${c_reset}                 ${c_blue}Lists out all of your search history.${c_reset}
   "
 }
 
