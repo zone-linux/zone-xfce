@@ -11,6 +11,14 @@ search_file="/tmp/yt-script-search"
 queries_file="${XDG_CONFIG_HOME:-$HOME}/.yt-queries"
 
 
+listQueries() {
+    if [[ ! -f "$queries_file" ]]; then
+        die "You don't have a search history.\n"
+    fi
+
+    formatPrint "$queries_file"
+}
+
 formatPrint(){
     count=1
     while IFS="" read -r line || [ -n "$line" ];do
@@ -254,6 +262,10 @@ elif [[ "$1" == "-h" || "$1" == "--history" ]]; then
 elif [[ "$1" == "-k" || "$1" == "--kill" ]]; then
     pkill mpv
 
+elif [[ "$1" == "-q" || "$1" == "--queries" ]]; then
+    listQueries
+
+# Help screen
 elif [[ "$1" == "--help" ]]; then
     helpScreen
 fi
