@@ -1,14 +1,15 @@
 #!/bin/bash
+set -euo pipefail
 
 DIR="/usr/share/sounds/zone"
 
 if [[ "$1" == "--login" ]]; then
-  mplayer "$DIR/pda_news.ogg"
+  mpv --no-video "$DIR/pda_news.ogg"
 elif [[ "$1" == "--logout" ]]; then
-  mplayer "$DIR/pda_objective.ogg"
+  mpv --no-video "$DIR/pda_objective.ogg"
 elif [[ "$1" == "--random" ]]; then
-  ls $DIR | shuf -n 1 | while read file; do
-    mplayer "$DIR/$file"
+  find "$DIR" -maxdepth 1 -name '*.ogg' | shuf -n 1 | while IFS= read -r file; do
+    mpv --no-video "$file"
   done
 else
   echo "

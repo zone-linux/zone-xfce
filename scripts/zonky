@@ -1,4 +1,4 @@
 #!/bin/bash
+set -euo pipefail
 
-# Launch Conky configuration
-conky --config=$HOME/.config/conky/zone.conkyrc -d
+conky --config="$HOME/.config/conky/zone.conkyrc" &

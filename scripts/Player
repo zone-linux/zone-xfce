@@ -1,3 +1,4 @@
 #!/bin/bash
+set -euo pipefail
 
-xfce4-terminal -x ncmpcpp -s visualizer
+xfce4-terminal -e "ncmpcpp -s visualizer"
