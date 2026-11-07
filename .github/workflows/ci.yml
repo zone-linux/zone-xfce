@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  config:
+    name: Validate the Zone XFCE configuration
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install tooling
+        run: pacman -Syu --noconfirm --needed bash zsh shellcheck
+
+      - uses: actions/checkout@v4
+
+      - name: Shell syntax
+        run: |
+          bash -n scripts/Player scripts/zonky scripts/neofetch bin/startupsound
+          zsh -n src/.zshrc
+
+      - name: shellcheck
+        run: shellcheck -S warning scripts/Player scripts/zonky bin/startupsound
+
+      - name: Desktop entries
+        run: |
+          status=0
+          while IFS= read -r file; do
+            grep -q '^\[Desktop Entry\]' "$file" || { echo "$file: missing [Desktop Entry]" >&2; status=1; }
+            grep -q '^Exec=' "$file" || { echo "$file: missing Exec" >&2; status=1; }
+          done < <(find src/.config/autostart -name '*.desktop' | sort)
+          exit "$status"
+
+      - name: Alias sanity
+        run: |
+          # Every alias must have a command and must not point at removed tools.
+          if grep -nE '^alias [^=]+=(exa|blueberry|gnu-netcat|gtop)\b' src/.zshrc src/.zshrc-personal; then
+            echo "an alias still points at a removed tool" >&2
+            exit 1
+          fi
+          if ! grep -q '^alias cleanup=' src/.zshrc-personal; then
+            echo "src/.zshrc-personal is missing the cleanup alias" >&2
+            exit 1
+          fi

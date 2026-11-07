@@ -45,8 +45,8 @@ shopt -s nocasematch
 LC_ALL=C
 LANG=C
 
-# Fix issues with gsettings.
-export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
+# GIO modules are loaded from the default Arch locations; the old Debian
+# multiarch path (and the gsettings workaround it supported) is not needed.
 
 # Neofetch default config.
 read -rd '' config <<'EOF'
