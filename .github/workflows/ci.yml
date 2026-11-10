@@ -31,7 +31,7 @@ jobs:
           grep -q 'name="ThemeName".*value="Qogir-Dark"' "$config/xsettings.xml"
           grep -q 'name="IconThemeName".*value="Qogir-Dark"' "$config/xsettings.xml"
           grep -q 'name="theme".*value="Qogir-Dark"' "$config/xfwm4.xml"
-          grep -q 'name="theme".*value="Qogir-Dark"' "$config/xfce4-notifyd.xml"
+          grep -q 'name="theme".*value="Default"' "$config/xfce4-notifyd.xml"
           grep -qx 'theme=Qogir-dark' src/.config/Kvantum/kvantum.kvconfig
           test ! -e 'src/.config/Kvantum/Qogir-dark#'
 
