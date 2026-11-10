@@ -18,11 +18,29 @@ jobs:
 
       - name: Shell syntax
         run: |
-          bash -n scripts/Player scripts/zonky scripts/neofetch bin/startupsound
+          bash -n scripts/Player scripts/zonky scripts/neofetch \
+                  scripts/xfce4-session-logout scripts/qbittorrent bin/startupsound
           zsh -n src/.zshrc
 
       - name: shellcheck
-        run: shellcheck -S warning scripts/Player scripts/zonky bin/startupsound
+        run: shellcheck -S warning scripts/Player scripts/zonky scripts/xfce4-session-logout scripts/qbittorrent bin/startupsound
+
+      - name: Theme alignment
+        run: |
+          config=src/.config/xfce4/xfconf/xfce-perchannel-xml
+          grep -q 'name="ThemeName".*value="Qogir-Dark"' "$config/xsettings.xml"
+          grep -q 'name="IconThemeName".*value="Qogir-Dark"' "$config/xsettings.xml"
+          grep -q 'name="theme".*value="Qogir-Dark"' "$config/xfwm4.xml"
+          grep -q 'name="theme".*value="Qogir-Dark"' "$config/xfce4-notifyd.xml"
+          grep -qx 'theme=Qogir-dark' src/.config/Kvantum/kvantum.kvconfig
+          test ! -e 'src/.config/Kvantum/Qogir-dark#'
+
+      - name: Session autostart
+        run: |
+          test ! -e src/.config/autostart/killMPD.desktop
+          test ! -e src/.config/autostart/killConky.desktop
+          test ! -e src/.config/autostart/LogoutSound.desktop
+          test -L src/.config/systemd/user/default.target.wants/mpd.service
 
       - name: Desktop entries
         run: |

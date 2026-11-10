@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Play the Zone logout sound, then hand off to the real XFCE logout helper.
+#
+# Installed to /usr/local/bin so that the session menu, Whisker Menu and the
+# Ctrl+Alt+Del shortcut all resolve this wrapper before /usr/bin.
+
+set -uo pipefail
+
+if [[ -x /usr/bin/startupsound ]]; then
+    timeout 4 /usr/bin/startupsound --logout >/dev/null 2>&1 || true
+fi
+
+exec /usr/bin/xfce4-session-logout "$@"

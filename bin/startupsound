@@ -1,18 +1,37 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Play a Zone PDA sound through the session audio server.
+
 set -euo pipefail
 
 DIR="/usr/share/sounds/zone"
 
+# PipeWire (and its PulseAudio compatibility socket) may still be starting
+# when the XFCE session launches. Wait briefly instead of failing silently.
+wait_for_audio() {
+    local runtime="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+    local _
+    for _ in {1..20}; do
+        [[ -S "${runtime}/pulse/native" ]] && return 0
+        sleep 0.25
+    done
+    return 0
+}
+
+play() {
+    wait_for_audio
+    mpv --no-video "$1"
+}
+
 if [[ "$1" == "--login" ]]; then
-  mpv --no-video "$DIR/pda_news.ogg"
+    play "$DIR/pda_news.ogg"
 elif [[ "$1" == "--logout" ]]; then
-  mpv --no-video "$DIR/pda_objective.ogg"
+    play "$DIR/pda_objective.ogg"
 elif [[ "$1" == "--random" ]]; then
-  find "$DIR" -maxdepth 1 -name '*.ogg' | shuf -n 1 | while IFS= read -r file; do
-    mpv --no-video "$file"
-  done
+    find "$DIR" -maxdepth 1 -name '*.ogg' | shuf -n 1 | while IFS= read -r file; do
+        play "$file"
+    done
 else
-  echo "
+    echo "
   Available Options:
     --login
     --logout

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# qBittorrent is a Qt6 application, so point it at the Qt6 platform theme.
+# /etc/environment sets qt5ct for Qt5; Qt6 ignores that value.
+
+set -euo pipefail
+
+export QT_QPA_PLATFORMTHEME=qt6ct
+exec /usr/bin/qbittorrent "$@"

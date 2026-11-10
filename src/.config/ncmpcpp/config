@@ -1,0 +1,18 @@
+# Zone ncmpcpp configuration.
+# Matches the MPD setup shipped in ~/.mpd/mpd.conf.
+
+ncmpcpp_directory = "~/.ncmpcpp"
+mpd_host = "127.0.0.1"
+mpd_port = "6600"
+mpd_music_dir = "/usr/share/zone/music"
+
+# Visualizer fed by the "my_fifo" output in ~/.mpd/mpd.conf.
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_look = "+|"
+visualizer_color = "green"
+
+colors_enabled = "yes"
+main_color = "green"

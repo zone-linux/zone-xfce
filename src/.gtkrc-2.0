@@ -1,0 +1,9 @@
+# Zone GTK2 theme settings (kept in sync with the GTK3/XFCE theme).
+gtk-theme-name = "Qogir-Dark"
+gtk-icon-theme-name = "Qogir-Dark"
+gtk-font-name = "JetBrainsMono Nerd Font 10"
+gtk-cursor-theme-name = "Zone"
+gtk-cursor-theme-size = 24
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
+gtk-menu-images = 1
+gtk-button-images = 0
